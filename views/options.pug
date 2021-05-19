@@ -1,0 +1,51 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Options
+        link(rel="stylesheet", href="/options.css")
+        link(rel="preconnect", href="https://fonts.gstatic.com")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap")
+    body 
+        .container
+            .top 
+                svg(width="24", height="24", viewBox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                    path(d="M8 5L3 10L8 15", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                    path(d="M3 10H11C16.523 10 21 14.477 21 20V21", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+
+                h1 
+                    a(href="/") Go Back
+
+            .copyBox 
+                .box
+                    h1#url #{file}
+                    button(onClick="copy(event)") Copy
+
+            .options 
+                button(onClick="qrCode()")
+                    svg(width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg")
+                        path(d="M3.73341 3.16663C3.45052 3.16663 3.17921 3.27901 2.97917 3.47905C2.77913 3.67908 2.66675 3.95039 2.66675 4.23329V8.49996H8.00008V3.16663H3.73341ZM6.66675 7.16663H4.00008V4.49996H6.66675V7.16663Z" fill="white")
+                        path(d="M2.66675 20.7667C2.66675 21.0496 2.77913 21.3209 2.97917 21.5209C3.17921 21.721 3.45052 21.8333 3.73341 21.8333H8.00008V16.5H2.66675V20.7667ZM4.00008 17.8333H6.66675V20.5H4.00008V17.8333Z" fill="white")
+                        path(d="M16 21.8333H20.2667C20.5496 21.8333 20.8209 21.721 21.0209 21.5209C21.221 21.3209 21.3333 21.0496 21.3333 20.7667V16.5H16V21.8333ZM17.3333 17.8333H20V20.5H17.3333V17.8333Z" fill="white")
+                        path(d="M20.2667 3.16663H16V8.49996H21.3333V4.23329C21.3333 3.95039 21.221 3.67908 21.0209 3.47905C20.8209 3.27901 20.5496 3.16663 20.2667 3.16663V3.16663ZM20 7.16663H17.3333V4.49996H20V7.16663Z" fill="white")
+                        path(d="M13.3334 7.16671V5.83337H10.6667V8.50004H12.0001V7.16671H13.3334Z" fill="white")
+                        path(d="M8 8.5H9.33333V9.83333H8V8.5Z" fill="white")
+                        path(d="M9.33325 9.83337H11.9999V11.1667H9.33325V9.83337Z" fill="white")
+                        path(d="M13.3333 4.49996V5.83329H14.6666V3.16663H9.33325V5.83329H10.6666V4.49996H13.3333Z" fill="white")
+                        path(d="M2.66675 9.83337H4.00008V12.5H2.66675V9.83337Z" fill="white")
+                        path(d="M8.00008 11.1667V12.5H6.66675V9.83337H5.33341V12.5H4.00008V13.8334H2.66675V15.1667H5.33341V13.8334H6.66675V15.1667H8.00008V13.8334H9.33341V11.1667H8.00008Z" fill="white")
+                        path(d="M13.3333 11.1666H14.6667V12.5H16V11.1666H17.3333V9.83329H14.6667V7.16663H13.3333V8.49996H12V9.83329H13.3333V11.1666Z" fill="white")
+                        path(d="M11.9999 20.5H9.33325V21.8333H14.6666V20.5H13.3333V19.1666H11.9999V20.5Z" fill="white")
+                        path(d="M14.6667 13.8333V12.5H13.3334V11.1666H12.0001V12.5H10.6667V13.8333H12.0001V15.1666H13.3334V13.8333H14.6667Z" fill="white")
+                        path(d="M20 13.8334H21.3333V15.1667H20V13.8334Z" fill="white")
+                        path(d="M14.6667 13.8334H18.6667V15.1667H14.6667V13.8334Z" fill="white")
+                        path(d="M19.9999 9.83337H18.6666V11.1667H17.3333V12.5H18.6666V13.8334H19.9999V12.5H21.3333V11.1667H19.9999V9.83337Z" fill="white")
+                        path(d="M13.3333 15.1666H14.6666V19.1666H13.3333V15.1666Z" fill="white")
+                        path(d="M9.33325 19.1667H10.6666V17.8334H11.9999V16.5H10.6666V13.8334H9.33325V19.1667Z" fill="white")
+
+                    h3 QR Code
+
+
+        script(src="/options.js") 

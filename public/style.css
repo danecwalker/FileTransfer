@@ -1,0 +1,168 @@
+*, html {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Poppins';
+}
+
+body, html {
+    width: 100%;
+    height:100vh;
+    background-color: #F1F1F3;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+h3, button {
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 80px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.top > h2 {
+    margin-left: 1rem;
+}
+
+.uploadArea {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #E4E4E5;
+    flex-grow: 1;
+    border-radius: 0.6rem;
+    border: 1px solid #D7D7D9;
+    display: flex;
+}
+
+.uploadArea > h3 {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #CBCBCC;
+}
+
+.uploadArea > h3 > i {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.emailSection {
+    display: inline-flex;
+    margin: 0 -1rem;
+    margin-top: 40px;
+}
+
+.emailSection > *, .emailSection > * > * {
+    background-color: transparent;
+}
+
+.to,.from,.message {
+    background-color: #FDFDFF;
+    border: 1px solid #D7D7D9;
+    padding: 1rem;
+    margin: 0 1rem;
+    flex-grow: 1;
+    border-radius: 0.6rem;
+}
+
+
+.toEmail,
+.fromEmail,
+.msgEmail {
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 0.6rem;
+    border: none;
+    outline: none;
+}
+
+.options {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.options > button {
+    cursor: pointer;
+    padding: 1rem 4rem;
+    background-color: #0085FF;
+    box-shadow: none;
+    border: none;
+    border-radius: 0.6rem;
+    color: #FDFDFF;
+    transition:all 200ms ease-in-out;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.options>button>svg {
+    background-color: transparent;
+    margin-right: 0.6rem;
+}
+
+
+.options>button:hover {
+    background-color: #007EF2;
+}
+
+.loaderBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.loader {
+    border: 16px solid #CBCBCC;
+    /* Light grey */
+    border-top: 16px solid #007EF2;
+    /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

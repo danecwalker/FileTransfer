@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Download #{fileId}.#{fileExt}
+        link(rel="stylesheet", href="/options.css")
+        link(rel="stylesheet", href="/down.css")
+        link(rel="preconnect", href="https://fonts.gstatic.com")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap")
+    body 
+        .container
+            .top 
+                svg(width="24", height="24", viewBox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                    path(d="M8 5L3 10L8 15", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                    path(d="M3 10H11C16.523 10 21 14.477 21 20V21", stroke="black", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+
+                h1 
+                    a(href="/") Go Back
+
+            .downloadBox 
+                svg(width="301" height="300" viewBox="0 0 301 300" fill="none" xmlns="http://www.w3.org/2000/svg")
+                    path(d="M150.5 275L188 237.5M150.5 275V150V275ZM150.5 275L113 237.5L150.5 275Z" stroke="#00CCA7" stroke-width="20" stroke-linecap="round" stroke-linejoin="round")
+                    path(d="M63.4246 101.462C51.6023 104.437 41.2731 111.626 34.3778 121.68C27.4825 131.733 24.4957 143.959 25.9785 156.059C27.4613 168.16 33.3117 179.302 42.4305 187.393C51.5492 195.484 63.3088 199.967 75.4996 199.999H87.9996" stroke="#00CCA7" stroke-width="20" stroke-linecap="round" stroke-linejoin="round")
+                    path(d="M198.374 76.7245C194.102 59.8067 183.556 45.1463 168.876 35.7152C154.195 26.2842 136.477 22.7882 119.315 25.9358C102.152 29.0835 86.8283 38.6393 76.4498 52.6663C66.0714 66.6932 61.4148 84.1416 63.4241 101.475C63.4241 101.475 65.3366 112.5 69.2491 118.75" stroke="#00CCA7" stroke-width="20" stroke-linecap="round" stroke-linejoin="round")
+                    path(d="M213 200C221.825 199.994 230.55 198.119 238.598 194.498C246.647 190.878 253.837 185.593 259.697 178.993C265.556 172.394 269.951 164.628 272.592 156.207C275.234 147.786 276.062 138.901 275.022 130.137C273.982 121.373 271.098 112.928 266.56 105.359C262.021 97.7902 255.931 91.2681 248.69 86.2223C241.45 81.1765 233.222 77.7215 224.55 76.0845C215.878 74.4475 206.957 74.6658 198.375 76.725L181.75 81.25" stroke="#00CCA7" stroke-width="20" stroke-linecap="round" stroke-linejoin="round")
+                 
+                a(href="#", onClick=`Download("${fileId}.${fileExt}")`) 
+                    h2 Download File
+                h1 File #{fileId}.#{fileExt} is ready to download.
+
+        script(src="/down.js") 

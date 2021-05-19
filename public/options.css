@@ -1,0 +1,143 @@
+*,
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body,
+html {
+    width: 100%;
+    height: 100vh;
+    background-color: #F1F1F3;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+h3,
+button {
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 80px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.top>h1 {
+    margin-left: 1rem;
+    
+}
+
+h1 > a {
+    text-decoration: none;
+    color: #000;
+}
+
+.copyBox {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width:80%;
+    background-color: #FDFDFF;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    border: 1px solid #D7D7D9;
+}
+
+.box > h1 {
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 1rem;
+}
+
+.box > button {
+    cursor: pointer;
+    flex-grow: 1;
+    align-self: stretch;
+    font-size: 1.5rem;
+    border: none;
+    color: #FDFDFF;
+    border-radius: 0.6rem;
+    background-color: #0085FF;
+    transition:all 200ms ease-in-out;
+}
+
+.box > button:hover {
+    background-color: #007EF2;
+}
+
+.box > button.clicked {
+    background-color: #00CCA7;
+}
+
+.options {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.options>button {
+    cursor: pointer;
+    padding: 1rem 4rem;
+    background-color: #0085FF;
+    box-shadow: none;
+    border: none;
+    border-radius: 0.6rem;
+    color: #FDFDFF;
+    transition: all 200ms ease-in-out;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.options>button>svg {
+    background-color: transparent;
+    margin-right: 0.6rem;
+}
+
+
+.options>button:hover {
+    background-color: #007EF2;
+}
+
+.qrcode {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.qrcode > img {
+    padding:4rem;
+    width: 100%;
+    object-fit: contain;
+    align-self: stretch;
+}
